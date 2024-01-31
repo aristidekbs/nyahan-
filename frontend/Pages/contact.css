@@ -7,12 +7,11 @@
 
 .container{
     min-height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.627);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/frontend/asset/_DSC6165.jpg) ;
-    background-size: cover;
+    
     padding: 0 ;
     
 }
@@ -116,9 +115,8 @@ textarea::-webkit-scrollbar-thumb{
 .container form #button:hover{
     opacity: 0.7;
 }
-.container1{
-    background: black;
-}
+
+
 
 @media only screen and (max-width: 768px) {
     .container form {
@@ -135,4 +133,11 @@ textarea::-webkit-scrollbar-thumb{
 
 .container form #button {
     font-size: 16px;
+}
+
+
+.container1{
+
+    background-image: url(/frontend/asset/_DSC6165.jpg) ;
+    background-size: cover;
 }
