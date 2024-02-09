@@ -1,38 +1,143 @@
-<html lang="en">
 <!DOCTYPE html>
-    <meta charset="UTF-8">
+<html lang="en">
 <head>
-    <title>Accueil</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./accueil.css">
 </head>
-    <link rel="stylesheet" href="accueil.css">
-<!-- /*le nav barre*/ je vais utiliser le header -->
 <body>
-<div class="head">
-   <div class="head1" >
-        <div class="icon">
-        <div class="navbar">
-                
-                <h2 class="logo">Nyahan</h2>
-                <div class="menu">
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="../Pages/about me.html">About me</a>
+            <a href="">Contacts</a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="../asset/_DSC6165.jpg">
+                <div class="content">
+                    <div class="author">Nyahan</div>
+                    <div class="title">NYAHAN</div>
+                    <div class="topic">NyAHaN</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
             </div>
-                
-                <ul>
-                    <li><a href="./accueil.html">Home</a></li>
-                    <li><a href="./a bout me.html">A bout</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>    
+            <div class="item">
+                <img src="../asset/_DSC6306.jpg">
+                <div class="content">
+                    <div class="author">Nyahan</div>
+                    <div class="title">NYAHAN</div>
+                    <div class="topic">NyAhAn</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../asset/CQ3B9157-Edit-Edit-Edit.jpg">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../asset/_DSC6251-2.jpg">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
         </div>
-                
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="../asset/_DSC6165.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../asset/_DSC6306.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../asset/CQ3B9157-Edit-Edit-Edit.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../asset/_DSC6251-2.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
     </div>
-    
 
-    
-   
-   
-   </div>
-  
+    <script src="./app.js"></script>
 </body>
-
-</html>  
+</html>
