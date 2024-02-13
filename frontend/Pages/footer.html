@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Footer</title>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<style>
+  
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Caveat", cursive;
+
+    }
+    footer{
+        background-color: #000000;
+    }
+    .footerContainer{
+        width: 100%;
+        padding: 20px 10px 20px ;
+    }
+    .socialIcons{
+
+        display: flex;
+        justify-content: center;
+    }
+    .socialIcons a{
+        text-decoration: none;
+       
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    .socialIcons a i{
+
+
+        font-size: 2em;
+        color: rgb(151, 130, 130);
+        opacity: 0.9;
+        text-decoration: none;
+
+    }
+    .socialIcons a:hover{
+        background-color: #000000;
+        transition: 0.5s;
+    }
+    .socialIcons a:hover i{
+        color: rgb(255, 128, 0);
+        transition: 0.5s;
+
+
+    }
+    .footerNav{
+        margin: 30px 0;
+
+    }
+    .footerNav ul{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        
+    }
+    .footerNav ul li a{
+        color: antiquewhite;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 12px;
+        opacity: 0.7;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+
+
+    .footerNav ul li a:hover{
+        opacity: 1;
+    }
+    .footerBottom{
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .footerBottom p{
+        color: white;
+    }
+
+
+    .desgner{
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+
+    }
+    @media (max-width: 700px) {
+        .footerNav ul{
+            flex-direction: column;
+        }
+        .footerNav ul li{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
+            
+
+        
+        
+    }
+
+    
+
+</style>
+
+
+
+
+<body>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fab fa-google-plus"></i></a></li>
+            </div>
+
+            <div class="footerNav">
+                
+                <ul>
+                    <li><a href="../Pages/accueil.html">Home</a></li>
+                    <li><a href="../Pages/about me.html">About</a></li>
+                    <li><a href="">Gallerie</a></li>
+               
+                    <li><a href="../Pages/Contact.html">Contact</a></li>
+            
+                </ul>
+                
+        </div>
+           
+        </div>
+        <div class="footerBottom">
+            <p>Copyritght &copy;2024; Designed by  <span class="designer">C.AristideKbs</span></p>
+        </div>
+    </footer>
+</body>
+</html>
