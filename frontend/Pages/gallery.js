@@ -3,10 +3,12 @@ let popupBg = document.getElementById("popup-bg");
 let popupImg = document.getElementById("popup-img");
 
 const openPopup = (e) => {
-  let gridItemClicked = e.target.closest(".grid-item");
+  let gridItemClicked = e.target.closest(".grid-item .grid-img");
+  console.log(gridItemClicked)
   let clickedImageName = gridItemClicked.id;
   popupBg.classList.add("active");
-  popupImg.src = `../asset/${clickedImageName}.jpg`;
+  popupImg.src = gridItemClicked.src;
+  console.log(clickedImageName)
 };
 
 const closePopup = () => {
