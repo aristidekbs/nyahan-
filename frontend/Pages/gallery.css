@@ -24,6 +24,7 @@
     overflow-y: scroll;
     padding-right: 10px;
     grid-auto-flow: dense;
+    zoom: 1;
     
   }
   
@@ -128,16 +129,16 @@
     background-color: orange;
   }
 
-  @media screen and (min-width : 390px){
-    /* body{
+  @media screen and (max-width : 760px){
+     body{
       zoom: 0.8;
       width: 100%;
       height: 100%;
       overflow: auto;
     }
     #grid{
-      zoom: 0.8;
-      height: 100vh;
-    } */
+      zoom: 0.5;
+      height: auto;
+    } 
   }
   

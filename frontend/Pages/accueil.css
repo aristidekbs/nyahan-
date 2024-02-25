@@ -1,33 +1,99 @@
 
 body{
     margin: 0;
-    background-color: #0000007e;
+    background-color: #0000004d;
     color: #eee;
     /* font-family:"caveat" , cursive ; */
-    font-size: 10px;
+    font-size: 20px;
+    padding-top: 0;
 }
 a{
     text-decoration: none;
 }
-header{
-    width: 1140px;
-    max-width: 80%;
-    margin: auto;
+
+nav{
+    background-color: rgba(81, 75, 75, 0.488);
+    
+    height: 60px;
+
+}
+nav ul{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
     height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 100;
+    color: #000;
 }
-header a{
-    color: #eee;
-    margin-right: 40px;
-    font-size: 15px;
+nav a:hover{
+    background-color: #ffffff1f;
+
 }
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffff70;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebarli{
+    width: 100%;
+
+}
+
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media (max-width: 800px) {
+
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media (max-hidth: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
 /* carousel */
 .carousel{
     height: 100vh;
-    margin-top: -50px;
+   /* margin-top: -50px;  */
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -322,9 +388,10 @@ y6
 }
 .wrapper {
 	display: flex;
-	justify-content: space-evenly;
-	width: 90%;
+	justify-content: center;
+	width: 100%;
 	flex-wrap: wrap;
+    gap: 18px;
 }
 .card {
 	width: 280px;
@@ -404,75 +471,7 @@ y6
 
 
 
-/* .slider{
-    width: 1300px;
-    max-width: 100vw;
-    height: 700px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-}
-.slider .list{
-    position: absolute;
-    width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    transition: 1s;
-}
-.slider .list img{
-    width: 1300px;
-    max-width: 100vw;
-    height: 100%;
-    object-fit: cover;
-}
-.slider .buttons{
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-.slider .buttons button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff5;
-    color: #fff;
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-}
-.slider .dots{
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-.slider .dots li{
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-.slider .dots li.active{
-    width: 30px;
-}
-@media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
-    }
-} */
+
 
 .carousel-wrapper {
     height: 400px;
@@ -546,7 +545,7 @@ y6
   @media screen and (max-width : 760px ){
     .carousel-wrapper{
       height: 300px;
-      width: 400px;
+      width: 300px;
   
     }
   }
