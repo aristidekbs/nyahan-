@@ -41,8 +41,32 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease;
-    
+    position: relative;
+    display: inline-block;
   }
+  .like{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-image: url(./img.png);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-210%, -60%);
+    text-align: center;
+    background-size: 2900%;
+
+
+   }
+   @keyframes anim-like {
+    from{background-position: right;}
+    from{background-position: left;}
+}
+.anim-like {
+  animation-name: anim-like;
+  animation-duration: 1s;
+  animation-timing-function: steps(28);
+ }
   
   #nature-2,
   #nature-7,

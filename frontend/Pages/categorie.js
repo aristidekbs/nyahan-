@@ -21,6 +21,28 @@ popupImg.addEventListener("click", (e) => e.stopPropagation());
 popupBg.addEventListener("click", closePopup);
 
 
+const like = document.querySelector('.like');
 
+        let countlike = 0;
+        like.addEventListener('click', () =>{
+
+
+        if (countlike === 0 ){
+            like.classList.toggle("anim-like");
+            countlike = 1;
+            like.style.backgroundPosition = 'right';
+        }
+        else{
+            countlike = 0;
+            like.style.backgroundPosition = 'left';
+        }
+            
+
+            
+        } );
+
+    like.addEventListener('animationend', () => {
+        like.classList.toggle('anim-like');
+    })
 
 
